@@ -4,7 +4,7 @@ import './Main.css'
 export default function (props) {
     return (
         <main>
-            Main 2 
+            Main
         </main>
     )
 }
