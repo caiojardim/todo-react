@@ -5,7 +5,6 @@ export default function (props) {
     return (
         <main>
             Main
-            Main 333
         </main>
     )
 }
