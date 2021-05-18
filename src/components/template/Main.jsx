@@ -5,6 +5,7 @@ export default function (props) {
     return (
         <main>
             Main
+            Main 2
         </main>
     )
 }
