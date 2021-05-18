@@ -1,0 +1,15 @@
+:root {
+    --header-height: 100px;
+    --footer-height: 100px;
+}
+
+.app {
+    font-family: 'Oxygen', sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 
+        var(--header-height)
+        1fr
+        var(--footer-height);
+        grid-template-columns: 1fr;
+}

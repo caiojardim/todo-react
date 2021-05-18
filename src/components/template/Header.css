@@ -1,0 +1,10 @@
+header.header {
+    background-color: rgb(123, 52, 223);
+    color: rgb(242, 239, 243);
+    font-size: 3rem;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
