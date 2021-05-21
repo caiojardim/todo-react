@@ -1,8 +1,9 @@
 header.header {
-    background-color: rgb(123, 52, 223);
-    color: rgb(242, 239, 243);
+    background-color: #23CE6B;
+    color: #f5faff;
     font-size: 3rem;
     font-weight: bold;
+    box-shadow: 0 0 .4em #0009;
 
     display: flex;
     align-items: center;

@@ -1,9 +1,10 @@
 .form {
     padding: 0 10px;
-    background-color: rgb(172, 172, 172);
+    background-color: #E6E6E9;
     height: 100%;
     display: grid;
     grid-template-columns: 3fr 3fr 1fr;
+    box-shadow: 0 0 .4em 0 #0008;
 }
 
 .element {
@@ -28,18 +29,19 @@
 }
 
 .element button {
-    background-color: rgb(13, 238, 13);
-    color: #fff;
+    background-color: #23CE6B;
+    color: #000;
     border-radius: 5px;
-    border: solid 1px white;
+    border: solid 0.1px #0008;
 
+    padding: 0 1rem;
     font-size: 1.5rem ;
-    height: 2rem;
+    height: 2.5rem;
     width: 100%;
 }
 
-.element button:active {
-    background-color: rgb(14, 199, 14);
+.element button:hover {
+    background-color: #24bb63;
 }
 
 @media(max-width: 768px) {
