@@ -1,3 +1,40 @@
-main {
-    padding: 1rem;
+.container {
+    margin: 0rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media(max-width: 900px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+}
+
+.container-element {
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 1rem;
+    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    width: 90%;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: black solid 1px;
+    padding-left: 10px;
+    margin-bottom: 10px;
 }
