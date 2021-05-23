@@ -46,13 +46,13 @@
 
 @media(max-width: 768px) {
     .form {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 
             1fr 
             1fr;
         grid-template-areas: 
-            "input input input"
-            "select select button";
+            "input input input input"
+            "select select select button";
     }
     .input {
         grid-area: input;

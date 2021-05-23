@@ -11,5 +11,11 @@
         var(--header-height)
         1fr
         var(--footer-height);
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+}
+
+@media (max-width: 768){
+    .app {
+        font-size: 14px;
+    }
 }
