@@ -2,6 +2,24 @@
     margin-top: 0;
 }
 
+.container-element.high {
+    border-right: black solid 1px;
+}
+
+.container-element.midle {
+    border-right: black solid 1px;
+}
+
+@media(max-width: 900px) {
+    .container-element.high {
+        border-right: none;
+    }
+    
+    .container-element.midle {
+        border-right: none
+    }
+}
+
 .list-item {
     border-radius: 1.2rem;
 }

@@ -6,7 +6,7 @@ export default function (props) {
         return <span>Loading...</span>
       }
     return (
-        <div className='container-element'>
+        <div className={`container-element ${props.priority}`}>
             <h2>{props.title}</h2>
             <ul>
             {props.listOfElements.map(item => {
