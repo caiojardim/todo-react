@@ -10,6 +10,7 @@ export default function (props) {
     const [listElements, setListElements] = useState([])
 
     const { isReaload, toggleReload } = useReload()
+    // Reload is not working
 
     useEffect(() => {
         axios.get('http://localhost:3001/todo')
