@@ -32,7 +32,7 @@
     background-color: #23CE6B;
     color: #000;
     border-radius: 5px;
-    border: solid 0.1px #0008;
+    /* border: solid 0.1px #0008; */
 
     padding: 0 1rem;
     font-size: 1.5rem ;

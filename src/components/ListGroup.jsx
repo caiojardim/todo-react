@@ -12,10 +12,11 @@ export default function (props) {
             {props.listOfElements.map(item => {
                 return(
                     <>
-                        <li key={item.id}>
+                        <li key={item.id} className={`list-item ${props.priority}`}>
                             <span>{item.text}</span>
-                                <button>
-                                    <img src='trash-icon.png' width="20px" alt="Trash Icon"/>
+                                <button className="delete-button">
+                                    {/* <img src="trash-icon.png" width="20px" alt="" /> */}
+                                    <span>X</span> 
                                 </button>
                         </li>
                         

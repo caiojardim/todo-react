@@ -35,9 +35,9 @@ export default function (props) {
         console.log(listElements.midle)
     return (
         <div className="container">
-            <ListGroup title="Alta" listOfElements={listElements.high}></ListGroup>
-            <ListGroup title="Media" listOfElements={listElements.midle}></ListGroup>
-            <ListGroup title="Baixa" listOfElements={listElements.low}></ListGroup>
+            <ListGroup title="Alta" priority="high" listOfElements={listElements.high}></ListGroup>
+            <ListGroup title="Media" priority="midle" listOfElements={listElements.midle}></ListGroup>
+            <ListGroup title="Baixa" priority="low" listOfElements={listElements.low}></ListGroup>
 
         </div>
     )
