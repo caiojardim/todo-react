@@ -1,7 +1,13 @@
 import React from 'react'
 import './ListGroup.css'
+import axios from 'axios'
 
 export default function (props) {
+    console.log()
+    function deleteListItem(id) {
+        axios.delete(`http://localhost:3001/todo/${id}`)
+    }
+
     if (props.listOfElements === undefined) {
         return <span>Loading...</span>
       }
@@ -14,7 +20,7 @@ export default function (props) {
                     <>
                         <li key={item.id} className={`list-item ${props.priority}`}>
                             <span>{item.text}</span>
-                                <button className="delete-button">
+                                <button onClick={() => deleteListItem(item.id)} className="delete-button">
                                     {/* <img src="trash-icon.png" width="20px" alt="" /> */}
                                     <span>X</span> 
                                 </button>

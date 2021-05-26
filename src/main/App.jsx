@@ -4,11 +4,15 @@ import Footer from '../components/template/Footer'
 
 import './App.css'
 
+import { ReloadContextProvider } from '../components/contexts/ReloadContext'
+
 export default function (props) {
     return (
         <div className="app">
             <Header />
-            <Main />
+            <ReloadContextProvider>
+                <Main />
+            </ReloadContextProvider> 
             <Footer />
         </div>
     )

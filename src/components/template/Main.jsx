@@ -4,8 +4,12 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import ListGroup from '../ListGroup'
 
+import { useReload } from '../contexts/ReloadContext'
+
 export default function (props) {
     const [listElements, setListElements] = useState([])
+
+    const { isReaload, toggleReload } = useReload()
 
     useEffect(() => {
         axios.get('http://localhost:3001/todo')
@@ -30,7 +34,9 @@ export default function (props) {
                     }, {})
             )
             .then(resp => setListElements(resp))
-    }, [])       
+            /* .then(toggleReload()) */
+
+    }, [/* isReaload */])       
 
         console.log(listElements.midle)
     return (
@@ -38,7 +44,6 @@ export default function (props) {
             <ListGroup title="Alta" priority="high" listOfElements={listElements.high}></ListGroup>
             <ListGroup title="Media" priority="midle" listOfElements={listElements.midle}></ListGroup>
             <ListGroup title="Baixa" priority="low" listOfElements={listElements.low}></ListGroup>
-
         </div>
     )
 }
