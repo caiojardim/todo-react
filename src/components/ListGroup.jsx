@@ -2,10 +2,14 @@ import React from 'react'
 import './ListGroup.css'
 import axios from 'axios'
 
+import { useReload } from './contexts/ReloadContext'
+
 export default function (props) {
-    console.log()
+    const { setIsReload } = useReload()
+
     function deleteListItem(id) {
         axios.delete(`http://localhost:3001/todo/${id}`)
+        setIsReload(true)
     }
 
     if (props.listOfElements === undefined) {

@@ -3,18 +3,19 @@ import { createContext, useState, ReactNode, useContext } from 'react'
 export const ReloadContext = createContext({})
 
 export function ReloadContextProvider ({ children }) {
-    const [isReaload, setIsReaload] = useState(false);
+    const [isReload, setIsReload] = useState(true);
   
     function toggleReload() {
-      setIsReaload(!isReaload);
+      setIsReload(!isReload);
     }
 
   
     return ( 
         <ReloadContext.Provider 
             value={{
-                isReaload,
+                isReload,
                 toggleReload,
+                setIsReload
             }}
         >
             {children}

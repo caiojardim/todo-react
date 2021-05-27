@@ -1,40 +1,49 @@
 {
-    "todo": [{
-        "id": 1,
-        "text": "Fazer backend",
-        "priority": "low"
-    } , {
-        "id": 2,
-        "text": "Fazer frontend",
-        "priority": "midle"
-    } , {
-        "id": 3,
-        "text": "Fazer estilizar",
-        "priority": "high"
-    }, {
-        "id": 4,
-        "text": "Fazer backend",
-        "priority": "low"
-    } , {
-        "id": 5,
-        "text": "Fazer frontend",
-        "priority": "midle"
-    } , {
-        "id": 6,
-        "text": "Fazer estilizar",
-        "priority": "high"
-    } , {
-        "id": 7,
-        "text": "Fazer backend",
-        "priority": "low"
-    } , {
-        "id": 8,
-        "text": "Fazer frontend",
-        "priority": "midle"
-    } , {
-        "id": 9,
-        "text": "Fazer estilizar",
-        "priority": "high"
-    }]   
+  "todo": [
+    {
+      "id": 1,
+      "text": "Fazer backend",
+      "priority": "low"
+    },
+    {
+      "id": 2,
+      "text": "Fazer frontend",
+      "priority": "midle"
+    },
+    {
+      "id": 3,
+      "text": "Fazer estilizar",
+      "priority": "high"
+    },
+    {
+      "id": 4,
+      "text": "Fazer backend",
+      "priority": "low"
+    },
+    {
+      "id": 5,
+      "text": "Fazer frontend",
+      "priority": "midle"
+    },
+    {
+      "id": 6,
+      "text": "Fazer estilizar",
+      "priority": "high"
+    },
+    {
+      "id": 7,
+      "text": "Fazer backend",
+      "priority": "low"
+    },
+    {
+      "id": 8,
+      "text": "Fazer frontend",
+      "priority": "midle"
+    },
+    {
+      "id": 9,
+      "text": "Fazer estilizar",
+      "priority": "high"
+    }
+  ]
 }
-

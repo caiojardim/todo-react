@@ -9,7 +9,7 @@ import { useReload } from '../contexts/ReloadContext'
 export default function (props) {
     const [listElements, setListElements] = useState([])
 
-    const { isReaload, toggleReload } = useReload()
+    const { isReload, setIsReload } = useReload()
     // Reload is not working
 
     useEffect(() => {
@@ -35,9 +35,9 @@ export default function (props) {
                     }, {})
             )
             .then(resp => setListElements(resp))
-            /* .then(toggleReload()) */
+            .then(setIsReload(false)) 
 
-    }, [/* isReaload */])       
+    }, [ isReload ])       
 
         console.log(listElements.midle)
     return (
