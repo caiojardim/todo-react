@@ -21,16 +21,13 @@ export default function (props) {
             <ul>
             {props.listOfElements.map(item => {
                 return(
-                    <>
-                        <li key={item.id} className={`list-item ${props.priority}`}>
-                            <span>{item.text}</span>
-                                <button onClick={() => deleteListItem(item.id)} className="delete-button">
-                                    {/* <img src="trash-icon.png" width="20px" alt="" /> */}
-                                    <span>X</span> 
-                                </button>
-                        </li>
-                        
-                    </>
+                    <li key={item.id} className={`list-item ${props.priority}`}>
+                        <span>{item.text}</span>
+                            <button onClick={() => deleteListItem(item.id)} className="delete-button">
+                                {/* <img src="trash-icon.png" width="20px" alt="" /> */}
+                                <span>X</span> 
+                            </button>
+                    </li>
                 )
             })}
             </ul>
