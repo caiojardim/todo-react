@@ -39,7 +39,6 @@ export default function (props) {
 
     }, [ isReload ])       
 
-        console.log(listElements.midle)
     return (
         <div className="container">
             <ListGroup title="Alta" priority="high" listOfElements={listElements.high}></ListGroup>
