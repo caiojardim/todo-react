@@ -9,11 +9,11 @@ import { ReloadContextProvider } from '../components/contexts/ReloadContext'
 export default function (props) {
     return (
         <div className="app">
-            <Header />
             <ReloadContextProvider>
-                <Main />
+                <Header />
+                    <Main />
+                <Footer />
             </ReloadContextProvider> 
-            <Footer />
         </div>
     )
 }
