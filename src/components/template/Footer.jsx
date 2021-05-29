@@ -2,11 +2,15 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import './Footer.css'
 
+import { useReload } from '../contexts/ReloadContext'
+
 export default function (props) {
     const [form, setForm] = useState({
         text: '',
         priority: 2
     })
+
+    const { setIsReload } = useReload()
 
     function submitForm () {
         if (form.text.trim() === '') {
@@ -26,6 +30,7 @@ export default function (props) {
         }
 
         axios.post('http://localhost:3001/todo', {text, priority})
+        setIsReload(true)
         setForm({
             text: '',
             priority: 2
