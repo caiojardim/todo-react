@@ -13,7 +13,7 @@ export default function (props) {
     }
 
     if (props.listOfElements === undefined) {
-        return <span>Loading...</span>
+        return (<></>)
       }
     return (
         <div className={`container-element ${props.priority}`}>
